@@ -7,28 +7,28 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "pedro.santos@email.com",
-      href: "mailto:pedro.santos@email.com",
+      value: "contatodepedro@gmail.com",
+      href: "mailto:contatodepedro@gmail.com",
       description: "Melhor forma de me contatar"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "Pedro Augusto Santos",
-      href: "https://linkedin.com/in/pedro-santos",
+      value: "Pedro Magalhães",
+      href: "https://www.linkedin.com/in/pedro-augusto-841b0b2b0/",
       description: "Conecte-se comigo"
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "@pedrosantos",
-      href: "https://github.com/pedrosantos",
+      value: "@PedroAugustokkkk",
+      href: "https://github.com/PedroAugustokkkk",
       description: "Veja meus projetos"
     },
     {
       icon: MapPin,
       label: "Localização",
-      value: "Brasil",
+      value: "Salvador, Bahia, Brasil",
       href: "#",
       description: "Disponível para trabalho remoto"
     }
@@ -52,10 +52,11 @@ const ContactSection = () => {
           {contacts.map((contact, index) => {
             const Icon = contact.icon;
             return (
-              <Card 
+               <Card 
                 key={contact.label}
-                className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 animate-fade-in-up"
+                className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 animate-fade-in-up cursor-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
+                onClick={() => contact.href !== '#' && window.open(contact.href, '_blank')}
               >
                 <CardContent className="p-6 text-center">
                   <div className="mb-4 flex justify-center">
@@ -89,6 +90,7 @@ const ContactSection = () => {
           <Button 
             size="lg"
             className="bg-highlight text-highlight-foreground hover:bg-highlight/90 transition-all duration-300 shadow-glow"
+            onClick={() => window.open('mailto:contatodepedro@gmail.com', '_blank')}
           >
             <Mail className="h-5 w-5 mr-2" />
             Enviar Email

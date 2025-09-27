@@ -16,18 +16,17 @@ const HeroSection = () => {
       <div className="container relative z-10 text-center text-white px-4">
         <div className="animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-            Pedro Augusto
+            Pedro
             <br />
-            <span className="text-highlight">Santos Magalhães</span>
+            <span className="text-highlight">Magalhães</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 mb-4 max-w-3xl mx-auto">
-            Estudante de Engenharia de Software
+            Blog Pessoal & Portfólio
           </p>
           
           <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Especialização em Python, Inteligência Artificial, Machine Learning, 
-            Data Science e Automação
+            Estudante de Engenharia de Software • Python • IA • ML • Data Science
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -36,16 +35,16 @@ const HeroSection = () => {
               size="lg" 
               className="bg-highlight text-highlight-foreground hover:bg-highlight/90 transition-all duration-300 shadow-glow"
               onClick={() => {
-                const element = document.getElementById("projects");
+                const element = document.getElementById("blog");
                 element?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              Ver Projetos
+              Ver Blog
             </Button>
             <Button 
               variant="outline" 
               size="lg"
-              className="border-white/30 text-white hover:bg-white/10 transition-all duration-300"
+              className="border-white text-white bg-white/10 hover:bg-white hover:text-primary transition-all duration-300"
               onClick={() => {
                 const element = document.getElementById("contact");
                 element?.scrollIntoView({ behavior: "smooth" });
@@ -61,6 +60,7 @@ const HeroSection = () => {
               variant="ghost" 
               size="icon"
               className="text-white hover:text-highlight hover:bg-white/10 transition-all duration-300"
+              onClick={() => window.open('https://github.com/PedroAugustokkkk', '_blank')}
             >
               <Github className="h-6 w-6" />
             </Button>
@@ -68,6 +68,7 @@ const HeroSection = () => {
               variant="ghost" 
               size="icon"
               className="text-white hover:text-highlight hover:bg-white/10 transition-all duration-300"
+              onClick={() => window.open('https://www.linkedin.com/in/pedro-augusto-841b0b2b0/', '_blank')}
             >
               <Linkedin className="h-6 w-6" />
             </Button>
@@ -75,6 +76,7 @@ const HeroSection = () => {
               variant="ghost" 
               size="icon"
               className="text-white hover:text-highlight hover:bg-white/10 transition-all duration-300"
+              onClick={() => window.open('mailto:contatodepedro@gmail.com', '_blank')}
             >
               <Mail className="h-6 w-6" />
             </Button>

@@ -25,9 +25,9 @@ const AboutSection = () => {
             Sobre Mim
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Sou um estudante apaixonado por tecnologia, focado em criar soluções inovadoras 
-            através de dados, inteligência artificial e automação. Sempre em busca de novos 
-            desafios e oportunidades de aprendizado.
+            Bem-vindo ao meu blog pessoal! Sou estudante de Engenharia de Software apaixonado por 
+            tecnologia, focado em criar soluções inovadoras através de dados, inteligência artificial 
+            e automação. Aqui compartilho conhecimentos, projetos e experiências da minha jornada.
           </p>
         </div>
 

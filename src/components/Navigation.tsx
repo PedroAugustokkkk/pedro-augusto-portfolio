@@ -26,6 +26,7 @@ const Navigation = () => {
   const navItems = [
     { label: "Início", href: "hero" },
     { label: "Sobre", href: "about" },
+    { label: "Blog", href: "blog" },
     { label: "Projetos", href: "projects" },
     { label: "Contato", href: "contact" },
   ];
@@ -48,7 +49,7 @@ const Navigation = () => {
               isScrolled ? "text-primary" : "text-white"
             }`}
           >
-            Pedro Santos
+            Pedro Magalhães
           </Button>
 
           {/* Desktop Navigation */}

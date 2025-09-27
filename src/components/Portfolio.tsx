@@ -1,6 +1,7 @@
 import Navigation from "./Navigation";
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
+import BlogSection from "./BlogSection";
 import ProjectsSection from "./ProjectsSection";
 import ContactSection from "./ContactSection";
 
@@ -13,6 +14,9 @@ const Portfolio = () => {
       </div>
       <div id="about">
         <AboutSection />
+      </div>
+      <div id="blog">
+        <BlogSection />
       </div>
       <div id="projects">
         <ProjectsSection />
